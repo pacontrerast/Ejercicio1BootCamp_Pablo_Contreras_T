@@ -10,7 +10,7 @@ public class _6_Promedio_de_tres_numeros {
             System.out.println("b ="+b);
             System.out.println("c ="+c);
             System.out.println("====");
-            System.out.println("El promedio de los 3 numeros es :");
+            System.out.println("El promedio de los 3 numeros es : ");
             System.out.println(promedio);
 
         }
