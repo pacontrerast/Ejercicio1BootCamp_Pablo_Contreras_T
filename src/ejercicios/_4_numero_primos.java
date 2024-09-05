@@ -2,20 +2,24 @@ package ejercicios;
 
 public class _4_numero_primos {
 
-        public static void main(String[] args) {
-            int a = 29;
-            boolean esPrimo = true;
-            for (int i = 2; i <= Math.sqrt(a); i++) {
-                if (a % i == 0) {
-                    esPrimo = false;
-                    break;
+        public static boolean esPrimo(int numero) {
+            if (numero <= 1) {
+                return false;
+            }
+            for (int i = 2; i <= numero / 2; i++) {
+                if (numero % i == 0) {
+                    return false; //
                 }
             }
-
-            if (esPrimo) {
-                System.out.println(a + " es un número primo.");
+            return true;
+        }
+        public static void main(String[] args) {
+            int numero = 29;
+            if (esPrimo(numero)) {
+                System.out.println(numero + " es un número primo.");
             } else {
-                System.out.println(a + " no es un número primo.");
+                System.out.println(numero + " no es un número primo.");
             }
         }
 }
+
